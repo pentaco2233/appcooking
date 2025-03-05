@@ -3,47 +3,58 @@
 html,body {
 margin: 0;
 padding: 0;
-font-family: Arial, sans-serif;
+font-family: Helvetica Neue, sans-serif;
 height: 100vh;
 font-size: 16px;
+background-image: url('image/shiga.jpeg'), linear-gradient(rgba(255,255,255,0) 20%, white 80%);
+background-size: 100% auto;
+background-attachment: fixed;
+background-position: top center;
+background-repeat: no-repeat;
+background-blend-mode: screen;
 }
 
+
 img{
-max-width: 100%;
-height: auto;
-object-fit: cover;
 border: 0;
 }
 
 header {
-background-color: #333;
-color: white;
+background-color: white;
+color: black;
 display: flex;
-justify-content: center;
+justify-content: left;
 align-items: center;
-font-size: 1.5em;
+font-size: 1em;
 position: fixed;
 width: 100%;
-height: 50px;
+height: 40px;
 top: 0;
+padding-left: 20px;
 }
 
 footer {
-background-color: #333;
+background-color: white;
 display: flex;
 justify-content: center;
 align-items: center;
-color: white;
+color: black;
 text-align: center;
-font-size: 1em;
+font-size: 0.8em;
 width: 100%;
 height: 30px;
 bottom: 0;
 }
 
 label{
-padding: 5px 10px;
+padding: 3px 5px;
 border-radius: 5px;
+}
+
+img.app-icon{
+max-width: 100%;
+height: auto;
+object-fit: cover;
 }
 
 .device{
@@ -57,14 +68,10 @@ font-size: 0.8em;
 display: flex;
 }
 
-a.download{
-padding: 5px 10px;
-border-radius: 10px;
-background-color: #333;
-color: #ffffff;
-font-size: 1em;
+img.download{
+height: 40px;
+width: auto;
 margin-top: 10px;
-text-decoration: none;
 }
 
 a.credit{
@@ -76,7 +83,7 @@ text-align: center;
 }
 
 #container{
-padding: 50px 0;
+padding: 300px 0 100px 0;
 }
 
 #credit{
@@ -90,7 +97,7 @@ background-color: #ffffff;
 }
 
 .content {
-margin: 50px;
+margin: 0 50px;
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 box-sizing: border-box;
@@ -101,6 +108,10 @@ padding: 20px;
 display: flex;
 justify-content: flex-start;
 flex-wrap: wrap;
+border: 1px solid #cccccc;
+margin: 10px;
+border-radius: 20px;
+background-color: rgb(255 255 255/70%);
 }
 
 .icon{
@@ -112,57 +123,45 @@ box-sizing: border-box;
 .app-credit{
 width: 70%;
 padding-left: 10px;
-font-size: 1em;
 box-sizing: border-box;
 }
 
 .app-message{
 width: 100%;
-font-size: 1em;
+font-size: 0.8em;
 box-sizing: border-box;
-padding-top: 10px;
+margin-top: 5px;
+padding: 5px;
 }
 
 .about-us{
-margin: 0 100px;
+margin: 0 20%;
+padding: 20px 0;
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
 box-sizing: border-box;
-}
-
-.profile{
-width: 100%;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-}
-
-.profile-icon{
-width: 30%;
-box-sizing: border-box;
+border-radius: 20px;
+background-color: rgb(255 255 255/70%);
 }
 
 .profile-container{
 width: 70%;
-display: flex;
-justify-content: flex-start;
-flex-wrap: wrap;
-}
-
-.profile-text{
-width: 100%;
-height: 50%;
-padding-left: 20px;
+height: auto;
+display: block;
+justify-content: center;
+text-align: center;
 box-sizing: border-box;
 }
 
+
 .contact{
-margin-left: 100px;
-margin-right: 100px;
-margin-bottom: 100px;
+margin: 0 20% 100px 20%;
+padding: 20px 0px;
 font-size: 1em;
 text-align: center;
+border-radius: 20px;
+background-color: rgb(255 255 255/70%);
 }
 
 .pp{
@@ -177,7 +176,7 @@ text-align: center;
 
 h2{
 margin: 10px 0;
-font-size: 1.5em;
+font-size: 1.2em;
 }
 
 h3{
@@ -192,7 +191,7 @@ margin: 10px 0;
 
 
 
-@media only screen and (max-width : 480px){
+@media only screen and (max-width : 599px){
 
 	html,body {
 		margin: 0;
@@ -200,16 +199,23 @@ margin: 10px 0;
 		font-family: Arial, sans-serif;
 		height: 100vh;
 		font-size: 10px;
+		background-image: url('image/shiga.jpeg'), linear-gradient(rgba(255,255,255,0) 10%, white 35%);
+		background-size: 100% auto;
+		background-attachment: fixed;
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-blend-mode: screen;
 	}
 
 	#container{
-		margin: 50px 0px;
+		padding: 200px 0 50px 0;
 	}
 
 	h1{
 		margin: 50px 0;
 		font-size: 2em;
 		text-align: center;
+		
 	}
 
 	.content {
@@ -227,6 +233,11 @@ margin: 10px 0;
 		box-sizing: border-box;
 	}
 
+	.profile-container{
+		width: 100%;
+	
+	}
+
 	.contact{
 		margin-left: 20px;
 		margin-right: 20px;
@@ -238,6 +249,30 @@ margin: 10px 0;
 	.pp{
 		margin: 0 10px;
 	}
+
+	img.download{
+	height: 30px;
+	width: auto;
+	margin-top: 10px;
+	}
+
+	.item{
+	margin: 10px 20px;
+	}
+
+	.profile{
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	}
+
+}
+
+@media only screen and (min-width : 1024px){
+	.content{
+	margin: 0 100px;
+}
 
 }
 
