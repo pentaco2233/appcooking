@@ -154,7 +154,6 @@ text-align: center;
 box-sizing: border-box;
 }
 
-
 .contact{
 margin: 0 50px 100px 50px;
 padding: 20px 0px;
@@ -166,6 +165,8 @@ background-color: rgb(255 255 255/100%);
 
 .pp{
 margin: 0 50px;
+padding: 20px;
+background-color: white;
 }
 
 h1{
